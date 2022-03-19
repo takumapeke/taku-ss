@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.access__item:nth-child(n+2) {
+  margin-top: 25px;
+}
+.access__head {
+  font-size: 1.5rem;
+}
+.access__head::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1b0";
+  display: inline-block;
+  margin-right: 8px;
+  color: #ffbf1f;
+}
+.access__map {
+  margin-top: 25px;
+  position: relative;
+}
+.access__map::before {
+  content: "";
+  display: block;
+  position: relative;
+  height: 0;
+  padding-top: 75%;
+}
+.access__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.voice__item {
+  border-bottom: 1px solid #000;
+  padding: 20px 0;
+}
+.voice__item:first-child {
+  padding-top: 0;
+}
+.voice__num::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1b0";
+  display: inline-block;
+  margin-right: 8px;
+  color: #ffbf1f;
+}
+.voice__ttl {
+  font-size: 1.6rem;
+}
+.voice__txt {
+  margin-top: 10px;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 576px) {
+  /* sサイズ */
+}
+@media only screen and (min-width: 768px) {
+  /* mサイズ */
+  .access__head {
+    font-size: 1.8rem;
+  }
+  .access__map::before {
+    padding-top: 66%;
+  }
+  .voice {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .voice__item {
+    border-bottom: none;
+    padding: 0;
+    width: 46%;
+    font-size: 1.4rem;
+  }
+  .voice__item:nth-child(n+3) {
+    margin-top: 65px;
+  }
+  .voice__ttl {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* lサイズ */
+  .voice__item {
+    border-bottom: 1px solid #000;
+    padding: 30px 0;
+    width: 100%;
+  }
+  .voice__item:nth-child(n+3) {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* xlサイズ */
+}
+/*# sourceMappingURL=style.css.map */

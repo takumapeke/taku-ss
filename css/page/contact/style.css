@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.contact__cont {
+  margin-top: 30px;
+}
+.contact__txt {
+  margin-bottom: 25px;
+}
+.contact__caution {
+  margin-top: 45px;
+  font-size: 1.4rem;
+}
+.contact__caution-txt + .contact__caution-txt {
+  margin-top: 7px;
+}
+.contact__caution-link {
+  color: #ffbf1f;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 576px) {
+  /* sサイズ */
+}
+@media only screen and (min-width: 768px) {
+  /* mサイズ */
+}
+@media only screen and (min-width: 1024px) {
+  /* lサイズ */
+  .contact__cont {
+    margin-top: 40px;
+  }
+  .contact__txt {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* xlサイズ */
+}
+/*# sourceMappingURL=style.css.map */
