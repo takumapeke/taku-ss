@@ -1,0 +1,46 @@
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contact__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contact__lead {
+  margin-top: 30px;
+  text-align: center;
+}
+.contact__lead-txt {
+  display: inline-block;
+  text-align: left;
+}
+.contact__form {
+  margin-top: 35px;
+}
+.contact__important {
+  margin-top: 50px;
+}
+.contact__important-txt:nth-child(n+2) {
+  margin-top: 5px;
+}
+.contact__important-link {
+  border-bottom: 2px solid #ffbf1f;
+  color: #ffbf1f;
+}
+@media only screen and (min-width: 576px) {
+  /* s */
+}
+@media only screen and (min-width: 768px) {
+  /* m */
+}
+@media only screen and (min-width: 1024px) {
+  /* l */
+  .contact {
+    padding-top: 135px;
+    padding-bottom: 135px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* xl */
+}
+/*# sourceMappingURL=style.css.map */

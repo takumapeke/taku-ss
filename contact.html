@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="robots" content="noindex">
+    <title>お問い合わせ | ペットショップ菅原</title>
+    <script>
+        (function(d) {
+        var config = {
+            kitId: 'pgp0mtx',
+            scriptTimeout: 3000,
+            async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/page/contact/style.css">
+    <link rel="stylesheet" href="./assets/css/page/contact-form/style.css">
+</head>
+<body>
+    <!-- .header -->
+    <header class="header wrapper section">
+        <div class="header__inner">
+            <div class="header__logo"><a href="./index.html"><img src="./assets/img/logo.png" alt="ペットショップ菅原"></a></div>
+            <button type="button" class="header__ham" id="js-ham"><span class="header__ham-line"></span><span class="header__ham-line"></span><span class="header__ham-line"></span></button>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="./index.html" class="header__link">ホーム</a></li>
+                    <li class="header__item"><a href="./dog-search.html" class="header__link">犬・猫を探す</a></li>
+                    <li class="header__item"><a href="./service.html" class="header__link">サービス</a></li>
+                    <li class="header__item"><a href="./about.html" class="header__link">私たちについて</a></li>
+                    <li class="header__item"><a href="./contact.html" class="header__link">お問い合わせ</a></li>
+                    <li class="header__item"><a href="./form.html" class="header__link">予約フォーム</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /.header -->
+
+    <!-- .drawer -->
+    <nav class="drawer" id="js-drawer">
+        <ul class="drawer__list">
+            <li class="drawer__item"><a href="./index.html" class="drawer__link">ホーム</a></li>
+            <li class="drawer__item"><a href="./dog-search.html" class="drawer__link">犬・猫を探す</a></li>
+            <li class="drawer__item"><a href="./service.html" class="drawer__link">サービス</a></li>
+            <li class="drawer__item"><a href="./about.html" class="drawer__link">私たちについて</a></li>
+            <li class="drawer__item"><a href="./contact.html" class="drawer__link">お問い合わせ</a></li>
+            <li class="drawer__item"><a href="./form.html" class="drawer__link">予約フォーム</a></li>
+        </ul>
+    </nav>
+    <!-- /.drawer -->
+
+    <main>
+
+        <!-- .media -->
+        <section class="media media--top media--contact">
+            <div class="media__cont">
+                <div class="media__body">
+                    <div class="media__inner inner">
+                        <h1 class="cmn-ttl">お問い合わせ</h1>
+                        <div class="media__ttl">お気軽にご連絡してください</div>
+                        <p class="media__txt">ペットショップ菅原のサービス等に関するご質問にご対応いたします。下記フォームの必要な項目を記入し、お気軽にご連絡してください。<br>(※休業日は翌営業日以降の対応となりますので、ご了承ください。)</p>
+                        <a href="#contents" class="media__btn"><i class="fa-solid fa-angle-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.media -->
+
+        <!-- .contact -->
+        <section class="contact wrapper" id="contents">
+            <div class="contact__inner">
+                <h2 class="lower-ttl"><span class="emphasis">お問い合わせ</span></h2>
+                <div class="contact__lead">
+                    <p class="contact__lead-txt">ペットショップ菅原に関するご質問等は、下記フォームを入力し、お気軽にご連絡ください。</p>
+                </div>
+                <div class="contact__form contact-form">
+                    <form action="">
+                        <div class="contact-form__item">
+                            <div class="contact-form__head">
+                                <label for="fullname" class="contact-form__label contact-form__label--required">氏名</label>
+                                <p class="contact-form__error contact-form__fullname">入力してください</p>
+                            </div>
+                            <div class="contact-form__body">
+                                <input type="text" name="fullname" id="fullname" placeholder="山田 太郎" value="" class="contact-form__input">
+                            </div>
+                        </div>
+                        <div class="contact-form__item">
+                            <div class="contact-form__head">
+                                <label for="email" class="contact-form__label contact-form__label--required">メールアドレス</label>
+                                <p class="contact-form__error contact-form__email">入力してください</p>
+                            </div>
+                            <div class="contact-form__body">
+                                <input type="email" name="email" id="email" placeholder="example@example.com" value="" class="contact-form__input">
+                            </div>
+                        </div>
+                        <div class="contact-form__item">
+                            <div class="contact-form__head">
+                                <label for="tel" class="contact-form__label">電話番号</label>
+                            </div>
+                            <div class="contact-form__body">
+                                <input type="text" name="tel" id="tel" placeholder="000-0000-0000" class="contact-form__input">
+                            </div>
+                        </div>
+                        <div class="contact-form__item">
+                            <div class="contact-form__head">
+                                <label for="message" class="contact-form__label contact-form__label--required">お問い合わせ内容</label>
+                                <p class="contact-form__error contact-form__message">入力してください</p>
+                            </div>
+                            <div class="contact-form__body">
+                                <textarea name="message" id="message" placeholder="お問い合わせ内容を入力してください" value="" class="contact-form__input contact-form__input--l"></textarea>
+                            </div>
+                        </div>
+                        <div class="contact-form__submit-wrap">
+                            <input type="submit" value="送信する" class="contact-form__submit" id="js-submit">
+                        </div>
+                    </form>
+                    <div class="contact__important">
+                        <p class="contact__important-txt">※注意点</p>
+                        <P class="contact__important-txt">・シャンプー、ペットホテル、しつけ教室の申し込みは<a href="./form.html" class="contact__important-link">こちら</a>からお願いします。</P>
+                        <P class="contact__important-txt">・ご希望の子に関するお問い合わせについては、該当の「生体番号」を必ずご記入してください。</P>
+                        <P class="contact__important-txt">・休業日は翌営業日以降の対応となりますので、ご了承ください。</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.contact -->
+
+    </main>
+
+    <!-- .footer -->
+    <footer class="footer wrapper section">
+        <div class="footer__info">
+            <div class="footer__logo"><a href="./index.html"><img src="./assets/img/logo.png" alt="ペットショップ菅原"></a></div>
+            <div class="footer__contact">
+                <p class="footer__tel">TEL 000-0000-0000</p>
+                <a href="./contact.html" class="footer__contact-link">お問い合わせはこちら</a>
+            </div>
+        </div>
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="./index.html">ホーム</a></li>
+                <li class="footer__item">
+                    犬・猫を探す
+                    <ul class="footer__sublist">
+                        <li class="footer__subitem"><a href="./dog-search.html#contents" class="footer__sublink">犬を探す</a></li>
+                        <li class="footer__subitem"><a href="./cat-search.html#contents" class="footer__sublink">猫を探す</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    サービス
+                    <ul class="footer__sublist">
+                        <li class="footer__subitem"><a href="./service.html#shampoo" class="footer__sublink">シャンプー</a></li>
+                        <li class="footer__subitem"><a href="./service.html#cafe" class="footer__sublink">ふれあいカフェ</a></li>
+                        <li class="footer__subitem"><a href="./service.html#teach" class="footer__sublink">しつけ教室</a></li>
+                        <li class="footer__subitem"><a href="./service.html#hotel" class="footer__sublink">ペットホテル</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    私たちについて
+                    <ul class="footer__sublist">
+                        <li class="footer__subitem"><a href="./about.html#company" class="footer__sublink">会社概要</a></li>
+                        <li class="footer__subitem"><a href="./about.html#access" class="footer__sublink">アクセス</a></li>
+                        <li class="footer__subitem"><a href="./about.html#voice" class="footer__sublink">お客様の声</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item"><a href="./form.html">予約フォーム</a></li>
+            </ul>
+        </nav>
+        <ul class="footer__sns">
+            <li class="footer__sns-item"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+            <li class="footer__sns-item"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="footer__sns-item"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+        <p class="footer__copyright">copyright &copy; petshop sugawara all rights reserved.</p>
+    </footer>
+    <!-- /.footer -->
+
+    <a href="#" class="totop" id="js-top"><i class="fa-solid fa-angle-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="robots" content="noindex">
+    <title>予約フォーム | ペットショップ菅原</title>
+    <script>
+        (function(d) {
+        var config = {
+            kitId: 'pgp0mtx',
+            scriptTimeout: 3000,
+            async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/page/form/style.css">
+    <link rel="stylesheet" href="./assets/css/page/contact-form/style.css">
+</head>
+<body>
+    <!-- .header -->
+    <header class="header wrapper section">
+        <div class="header__inner">
+            <div class="header__logo"><a href="./index.html"><img src="./assets/img/logo.png" alt="ペットショップ菅原"></a></div>
+            <button type="button" class="header__ham" id="js-ham"><span class="header__ham-line"></span><span class="header__ham-line"></span><span class="header__ham-line"></span></button>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="./index.html" class="header__link">ホーム</a></li>
+                    <li class="header__item"><a href="./dog-search.html" class="header__link">犬・猫を探す</a></li>
+                    <li class="header__item"><a href="./service.html" class="header__link">サービス</a></li>
+                    <li class="header__item"><a href="./about.html" class="header__link">私たちについて</a></li>
+                    <li class="header__item"><a href="./contact.html" class="header__link">お問い合わせ</a></li>
+                    <li class="header__item"><a href="./form.html" class="header__link">予約フォーム</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /.header -->
+
+    <!-- .drawer -->
+    <nav class="drawer" id="js-drawer">
+        <ul class="drawer__list">
+            <li class="drawer__item"><a href="./index.html" class="drawer__link">ホーム</a></li>
+            <li class="drawer__item"><a href="./dog-search.html" class="drawer__link">犬・猫を探す</a></li>
+            <li class="drawer__item"><a href="./service.html" class="drawer__link">サービス</a></li>
+            <li class="drawer__item"><a href="./about.html" class="drawer__link">私たちについて</a></li>
+            <li class="drawer__item"><a href="./contact.html" class="drawer__link">お問い合わせ</a></li>
+            <li class="drawer__item"><a href="./form.html" class="drawer__link">予約フォーム</a></li>
+        </ul>
+    </nav>
+    <!-- /.drawer -->
+
+    <main>
+
+        <!-- .media -->
+        <section class="media media--top media--contact">
+            <div class="media__cont">
+                <div class="media__body">
+                    <div class="media__inner inner">
+                        <h1 class="cmn-ttl">予約フォーム</h1>
+                        <div class="media__ttl">予約を完了させてください</div>
+                        <p class="media__txt">ペットショップ菅原のサービスの予約は、下記のフォームで希望するサービスを選択してから必要事項を入力し、送信してください。沢山の応募をお待ちしております。</p>
+                        <a href="#contents" class="media__btn"><i class="fa-solid fa-angle-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.media -->
+
+        <!-- .form -->
+        <section class="form wrapper" id="contents">
+            <div class="form__inner">
+                <h2 class="lower-ttl"><span class="emphasis">予約フォーム</span></h2>
+                <div class="form__cont">
+                    <ul class="form__tab">
+                        <li class="form__tab-item"><a href="#" class="form__tab-btn form__tab-btn--current" id="tab1">シャンプー</a></li>
+                        <li class="form__tab-item"><a href="#" class="form__tab-btn" id="tab2">しつけ教室</a></li>
+                        <li class="form__tab-item"><a href="#" class="form__tab-btn" id="tab3">ペットホテル</a></li>
+                    </ul>
+                    <div class="form__box">
+
+                        <!-- .shampoo -->
+                        <div class="form__item tab1">
+                            <h3 class="form__ttl"><span class="emphasis">シャンプー予約</span></h3>
+                            <div class="form__form contact-form">
+                                <form action="">
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="fullname1" class="contact-form__label contact-form__label--required">氏名</label>
+                                            <p class="contact-form__error contact-form__fullname1">入力してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <input type="text" name="fullname1" id="fullname1" placeholder="山田 太郎" value="" class="contact-form__input">
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="email1" class="contact-form__label contact-form__label--required">メールアドレス</label>
+                                            <p class="contact-form__error contact-form__email1">入力してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <input type="email" name="email1" id="email1" placeholder="example@example.com" value="" class="contact-form__input">
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="tel1" class="contact-form__label">電話番号</label>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <input type="text" name="tel1" id="tel1" placeholder="000-0000-0000" class="contact-form__input">
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label class="contact-form__label contact-form__label--required">日付</label>
+                                            <p class="contact-form__error contact-form__date1">選択してください</p>
+                                        </div>
+                                        <div class="contact-form__body contact-form__date-body">
+                                            <div class="contact-form__date-item">
+                                                <select name="month1" id="month1" class="contact-form__select">
+                                                    <option value="none">-</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                                月
+                                            </div>
+                                            <div class="contact-form__date-item">
+                                                <select name="day1" id="day1" class="contact-form__select">
+                                                    <option value="none">-</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                    <option value="25">25</option>
+                                                    <option value="26">26</option>
+                                                    <option value="27">27</option>
+                                                    <option value="28">28</option>
+                                                    <option value="29">29</option>
+                                                    <option value="30">30</option>
+                                                    <option value="31">31</option>
+                                                </select>
+                                                日
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label class="contact-form__label contact-form__label--required">犬種・猫種</label>
+                                            <p class="contact-form__error contact-form__kind1">選択してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <select name="kind1" id="kind1" class="contact-form__select">
+                                                <option value="none">-</option>
+                                                <option value="小型犬">小型犬</option>
+                                                <option value="中型犬">中型犬</option>
+                                                <option value="大型犬">大型犬</option>
+                                                <option value="短毛猫">短毛猫</option>
+                                                <option value="長毛猫">長毛猫</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label class="contact-form__label contact-form__label--required">希望時間</label>
+                                            <p class="contact-form__error contact-form__time">選択してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <select name="time" id="time" class="contact-form__select">
+                                                <option value="none">-</option>
+                                                <option value="10:30~">10:30~</option>
+                                                <option value="12:30~">12:30~</option>
+                                                <option value="15:00~">15:00~</option>
+                                                <option value="17:00~">17:00~</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label class="contact-form__label contact-form__label--required">一時お預かり</label>
+                                            <p class="contact-form__error contact-form__keep">選択してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <select name="keep" id="keep" class="contact-form__select">
+                                                <option value="none">-</option>
+                                                <option value="希望する">希望する</option>
+                                                <option value="希望しない">希望しない</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="message1" class="contact-form__label">自由記入欄</label>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <textarea name="message1" id="message1" placeholder="質問等ございましたらお書きください" class="contact-form__input contact-form__input--l"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__submit-wrap">
+                                        <input type="submit" value="送信する" class="contact-form__submit" id="js-submit1">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /.shampoo -->
+
+                        <!-- .teach -->
+                        <div class="form__item tab2">
+                            <h3 class="form__ttl"><span class="emphasis">しつけ教室予約</span></h3>
+                            <div class="form__form contact-form">
+                                <form action="">
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="fullname2" class="contact-form__label contact-form__label--required">氏名</label>
+                                            <p class="contact-form__error contact-form__fullname2">入力してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <input type="text" name="fullname2" id="fullname2" placeholder="山田 太郎" value="" class="contact-form__input">
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="email2" class="contact-form__label contact-form__label--required">メールアドレス</label>
+                                            <p class="contact-form__error contact-form__email2">入力してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <input type="email" name="email2" id="email2" placeholder="example@example.com" value="" class="contact-form__input">
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="tel2" class="contact-form__label">電話番号</label>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <input type="text" name="tel2" id="tel2" placeholder="000-0000-0000" class="contact-form__input">
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label class="contact-form__label contact-form__label--required">日付</label>
+                                            <p class="contact-form__error contact-form__date2">選択してください</p>
+                                        </div>
+                                        <div class="contact-form__body contact-form__date-body">
+                                            <div class="contact-form__date-item">
+                                                <select name="month2" id="month2" class="contact-form__select">
+                                                    <option value="none">-</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                                月
+                                            </div>
+                                            <div class="contact-form__date-item">
+                                                <select name="day2" id="day2" class="contact-form__select">
+                                                    <option value="none">-</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                    <option value="25">25</option>
+                                                    <option value="26">26</option>
+                                                    <option value="27">27</option>
+                                                    <option value="28">28</option>
+                                                    <option value="29">29</option>
+                                                    <option value="30">30</option>
+                                                    <option value="31">31</option>
+                                                </select>
+                                                日
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label class="contact-form__label contact-form__label--required">犬種・猫種</label>
+                                            <p class="contact-form__error contact-form__kind2">選択してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <select name="kind2" id="kind2" class="contact-form__select">
+                                                <option value="none">-</option>
+                                                <option value="小型犬">小型犬</option>
+                                                <option value="中型犬">中型犬</option>
+                                                <option value="大型犬">大型犬</option>
+                                                <option value="短毛猫">短毛猫</option>
+                                                <option value="長毛猫">長毛猫</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label class="contact-form__label contact-form__label--required">参加する回</label>
+                                            <p class="contact-form__error contact-form__part">選択してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <select name="part" id="part" class="contact-form__select">
+                                                <option value="none">-</option>
+                                                <option value="午前・午後">午前・午後</option>
+                                                <option value="午前のみ">午前のみ</option>
+                                                <option value="午後のみ">午後のみ</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="message2" class="contact-form__label">自由記入欄</label>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <textarea name="message2" id="message2" placeholder="質問等ございましたらお書きください" class="contact-form__input contact-form__input--l"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__submit-wrap">
+                                        <input type="submit" value="送信する" class="contact-form__submit" id="js-submit2">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /.teach -->
+
+                        <!-- .hotel -->
+                        <div class="form__item tab3">
+                            <h3 class="form__ttl"><span class="emphasis">ペットホテル予約</span></h3>
+                            <div class="form__form contact-form">
+                                <form action="">
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="fullname3" class="contact-form__label contact-form__label--required">氏名</label>
+                                            <p class="contact-form__error contact-form__fullname3">入力してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <input type="text" name="fullname3" id="fullname3" placeholder="山田 太郎" value="" class="contact-form__input">
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="email3" class="contact-form__label contact-form__label--required">メールアドレス</label>
+                                            <p class="contact-form__error contact-form__email3">入力してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <input type="email" name="email3" id="email3" placeholder="example@example.com" value="" class="contact-form__input">
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="tel3" class="contact-form__label">電話番号</label>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <input type="text" name="tel3" id="tel3" placeholder="000-0000-0000" class="contact-form__input">
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label class="contact-form__label contact-form__label--required">日付</label>
+                                            <p class="contact-form__error contact-form__date3">選択してください</p>
+                                        </div>
+                                        <div class="contact-form__body contact-form__date-body">
+                                            <div class="contact-form__date-item">
+                                                <select name="month3" id="month3" class="contact-form__select">
+                                                    <option value="none">-</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                                月
+                                            </div>
+                                            <div class="contact-form__date-item">
+                                                <select name="day3" id="day3" class="contact-form__select">
+                                                    <option value="none">-</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                    <option value="25">25</option>
+                                                    <option value="26">26</option>
+                                                    <option value="27">27</option>
+                                                    <option value="28">28</option>
+                                                    <option value="29">29</option>
+                                                    <option value="30">30</option>
+                                                    <option value="31">31</option>
+                                                </select>
+                                                日
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label class="contact-form__label contact-form__label--required">犬種・猫種</label>
+                                            <p class="contact-form__error contact-form__kind3">選択してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <select name="kind3" id="kind3" class="contact-form__select">
+                                                <option value="none">-</option>
+                                                <option value="小型犬">小型犬</option>
+                                                <option value="中型犬">中型犬</option>
+                                                <option value="大型犬">大型犬</option>
+                                                <option value="短毛猫">短毛猫</option>
+                                                <option value="長毛猫">長毛猫</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label class="contact-form__label contact-form__label--required">散歩の有無</label>
+                                            <p class="contact-form__error contact-form__walk">選択してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <select name="walk" id="walk" class="contact-form__select">
+                                                <option value="none">-</option>
+                                                <option value="希望する">希望する</option>
+                                                <option value="希望しない">希望しない</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label class="contact-form__label contact-form__label--required">利用内容</label>
+                                            <p class="contact-form__error contact-form__use">選択してください</p>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <select name="use" id="use" class="contact-form__select">
+                                                <option value="none">-</option>
+                                                <option value="お泊り">お泊り</option>
+                                                <option value="一時お預かり">一時お預かり</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <div class="contact-form__head">
+                                            <label for="message3" class="contact-form__label">自由記入欄</label>
+                                        </div>
+                                        <div class="contact-form__body">
+                                            <textarea name="message3" id="message3" placeholder="質問等ございましたらお書きください" class="contact-form__input contact-form__input--l"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form__submit-wrap">
+                                        <input type="submit" value="送信する" class="contact-form__submit" id="js-submit3">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /.hotel -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.form -->
+
+    </main>
+
+    <!-- .footer -->
+    <footer class="footer wrapper section">
+        <div class="footer__info">
+            <div class="footer__logo"><a href="./index.html"><img src="./assets/img/logo.png" alt="ペットショップ菅原"></a></div>
+            <div class="footer__contact">
+                <p class="footer__tel">TEL 000-0000-0000</p>
+                <a href="./contact.html" class="footer__contact-link">お問い合わせはこちら</a>
+            </div>
+        </div>
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="./index.html">ホーム</a></li>
+                <li class="footer__item">
+                    犬・猫を探す
+                    <ul class="footer__sublist">
+                        <li class="footer__subitem"><a href="./dog-search.html#contents" class="footer__sublink">犬を探す</a></li>
+                        <li class="footer__subitem"><a href="./cat-search.html#contents" class="footer__sublink">猫を探す</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    サービス
+                    <ul class="footer__sublist">
+                        <li class="footer__subitem"><a href="./service.html#shampoo" class="footer__sublink">シャンプー</a></li>
+                        <li class="footer__subitem"><a href="./service.html#cafe" class="footer__sublink">ふれあいカフェ</a></li>
+                        <li class="footer__subitem"><a href="./service.html#teach" class="footer__sublink">しつけ教室</a></li>
+                        <li class="footer__subitem"><a href="./service.html#hotel" class="footer__sublink">ペットホテル</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    私たちについて
+                    <ul class="footer__sublist">
+                        <li class="footer__subitem"><a href="./about.html#company" class="footer__sublink">会社概要</a></li>
+                        <li class="footer__subitem"><a href="./about.html#access" class="footer__sublink">アクセス</a></li>
+                        <li class="footer__subitem"><a href="./about.html#voice" class="footer__sublink">お客様の声</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item"><a href="./form.html">予約フォーム</a></li>
+            </ul>
+        </nav>
+        <ul class="footer__sns">
+            <li class="footer__sns-item"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+            <li class="footer__sns-item"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="footer__sns-item"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+        <p class="footer__copyright">copyright &copy; petshop sugawara all rights reserved.</p>
+    </footer>
+    <!-- /.footer -->
+
+    <a href="#" class="totop" id="js-top"><i class="fa-solid fa-angle-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/form.js"></script>
+</body>
+</html>

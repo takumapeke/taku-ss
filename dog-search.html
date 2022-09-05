@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="robots" content="noindex">
+    <title>犬を探す | ペットショップ菅原</title>
+    <script>
+        (function(d) {
+        var config = {
+            kitId: 'pgp0mtx',
+            scriptTimeout: 3000,
+            async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/page/search/style.css">
+</head>
+<body>
+    <!-- .header -->
+    <header class="header wrapper section">
+        <div class="header__inner">
+            <div class="header__logo"><a href="./index.html"><img src="./assets/img/logo.png" alt="ペットショップ菅原"></a></div>
+            <button type="button" class="header__ham" id="js-ham"><span class="header__ham-line"></span><span class="header__ham-line"></span><span class="header__ham-line"></span></button>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="./index.html" class="header__link">ホーム</a></li>
+                    <li class="header__item"><a href="./dog-search.html" class="header__link">犬・猫を探す</a></li>
+                    <li class="header__item"><a href="./service.html" class="header__link">サービス</a></li>
+                    <li class="header__item"><a href="./about.html" class="header__link">私たちについて</a></li>
+                    <li class="header__item"><a href="./contact.html" class="header__link">お問い合わせ</a></li>
+                    <li class="header__item"><a href="./form.html" class="header__link">予約フォーム</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /.header -->
+
+    <!-- .drawer -->
+    <nav class="drawer" id="js-drawer">
+        <ul class="drawer__list">
+            <li class="drawer__item"><a href="./index.html" class="drawer__link">ホーム</a></li>
+            <li class="drawer__item"><a href="./dog-search.html" class="drawer__link">犬・猫を探す</a></li>
+            <li class="drawer__item"><a href="./service.html" class="drawer__link">サービス</a></li>
+            <li class="drawer__item"><a href="./about.html" class="drawer__link">私たちについて</a></li>
+            <li class="drawer__item"><a href="./contact.html" class="drawer__link">お問い合わせ</a></li>
+            <li class="drawer__item"><a href="./form.html" class="drawer__link">予約フォーム</a></li>
+        </ul>
+    </nav>
+    <!-- /.drawer -->
+
+    <main>
+
+        <!-- .media -->
+        <section class="media media--top media--search">
+            <div class="media__cont">
+                <div class="media__body">
+                    <div class="media__inner inner">
+                        <h1 class="cmn-ttl">犬・猫を探す</h1>
+                        <div class="media__ttl">新しい家族を迎えませんか?</div>
+                        <p class="media__txt">ペットショップ菅原にはたくさんのワンちゃん・ネコちゃんたちが揃っています。お探しのペットはこちらから確認することができます。ぜひ、新しい大切な家族を見つけてください!!<br>(※ご来店いただいた際、すでにご成約済みになっている場合がございます。お電話またはメールでお問い合わせをしてから、ご来店ください。)</p>
+                        <a href="#contents" class="media__btn"><i class="fa-solid fa-angle-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.media -->
+
+        <!-- .search -->
+        <section class="search wrapper" id="contents">
+            <div class="search__inner">
+                <h2 class="lower-ttl"><span class="emphasis">犬を探す</span></h2>
+                <div class="search__cont">
+                    <ul class="search__tab">
+                        <li class="search__tab-item"><a href="./dog-search.html#contents" class="search__tab-link search__tab-link--current">犬を探す</a></li>
+                        <li class="search__tab-item"><a href="./cat-search.html#contents" class="search__tab-link">猫を探す</a></li>
+                    </ul>
+                    <div class="search__box">
+                        <div class="search__filter">
+                            <button value="dog-kind1" class="search__filter-item">ミニチュワダックスフンド</button>
+                            <button value="dog-kind2" class="search__filter-item">チワワ</button>
+                            <button value="dog-kind3" class="search__filter-item">プードル</button>
+                            <button value="dog-kind4" class="search__filter-item">ゴールデンレトリバー</button>
+                            <button value="all" class="search__filter-item search__filter-item--current">すべて</button>
+                        </div>
+                        <ul class="search__list">
+                            <li class="search__item dog-kind1">
+                                <a href="#" class="search__link" id="dog1">
+                                    <div class="search__body">
+                                        <p class="search__name">ミニチュワダックスフンド</p>
+                                        <p class="search__gender search__girl">女の子</p>
+                                        <p class="search__num">生体番号：0000</p>
+                                        <p class="search__price">価格(税込)：○○円</p>
+                                    </div>
+                                    <div class="search__img-wrap"><img src="./assets/img/search-dog1.jpg" alt="ミニチュワダックスフンド" class="search__img"></div>
+                                </a>
+                            </li>
+                            <li class="search__item dog-kind1">
+                                <a href="#" class="search__link" id="dog2">
+                                    <div class="search__body">
+                                        <p class="search__name">ミニチュワダックスフンド</p>
+                                        <p class="search__gender search__boy">男の子</p>
+                                        <p class="search__num">生体番号：0000</p>
+                                        <p class="search__price">価格(税込)：○○円</p>
+                                    </div>
+                                    <div class="search__img-wrap"><img src="./assets/img/search-dog2.jpg" alt="ミニチュワダックスフンド" class="search__img"></div>
+                                </a>
+                            </li>
+                            <li class="search__item dog-kind4">
+                                <a href="#" class="search__link" id="dog3">
+                                    <div class="search__body">
+                                        <p class="search__name">ゴールデンレトリバー</p>
+                                        <p class="search__gender search__boy">男の子</p>
+                                        <p class="search__num">生体番号：0000</p>
+                                        <p class="search__price">価格(税込)：○○円</p>
+                                    </div>
+                                    <div class="search__img-wrap"><img src="./assets/img/search-dog3.jpg" alt="ゴールデンレトリバー" class="search__img"></div>
+                                </a>
+                            </li>
+                            <li class="search__item dog-kind2">
+                                <a href="#" class="search__link" id="dog4">
+                                    <div class="search__body">
+                                        <p class="search__name">チワワ</p>
+                                        <p class="search__gender search__girl">女の子</p>
+                                        <p class="search__num">生体番号：0000</p>
+                                        <p class="search__price">価格(税込)：○○円</p>
+                                    </div>
+                                    <div class="search__img-wrap"><img src="./assets/img/search-dog4.png" alt="チワワ" class="search__img"></div>
+                                </a>
+                            </li>
+                            <li class="search__item dog-kind3">
+                                <a href="#" class="search__link" id="dog5">
+                                    <div class="search__body">
+                                        <p class="search__name">プードル</p>
+                                        <p class="search__gender search__girl">女の子</p>
+                                        <p class="search__num">生体番号：0000</p>
+                                        <p class="search__price">価格(税込)：○○円</p>
+                                    </div>
+                                    <div class="search__img-wrap"><img src="./assets/img/search-dog5.jpg" alt="プードル" class="search__img"></div>
+                                </a>
+                            </li>
+                            <li class="search__item dog-kind2">
+                                <a href="#" class="search__link" id="dog6">
+                                    <div class="search__body">
+                                        <p class="search__name">チワワ</p>
+                                        <p class="search__gender search__boy">男の子</p>
+                                        <p class="search__num">生体番号：0000</p>
+                                        <p class="search__price">価格(税込)：○○円</p>
+                                    </div>
+                                    <div class="search__img-wrap"><img src="./assets/img/search-dog6.jpg" alt="チワワ" class="search__img"></div>
+                                </a>
+                            </li>
+                            <li class="search__item dog-kind1">
+                                <a href="#" class="search__link" id="dog7">
+                                    <div class="search__body">
+                                        <p class="search__name">ミニチュワダックスフンド</p>
+                                        <p class="search__gender search__boy">男の子</p>
+                                        <p class="search__num">生体番号：0000</p>
+                                        <p class="search__price">価格(税込)：○○円</p>
+                                    </div>
+                                    <div class="search__img-wrap"><img src="./assets/img/search-dog7.jpg" alt="ミニチュワダックスフンド" class="search__img"></div>
+                                </a>
+                            </li>
+                            <li class="search__item dog-kind2">
+                                <a href="#" class="search__link" id="dog8">
+                                    <div class="search__body">
+                                        <p class="search__name">チワワ</p>
+                                        <p class="search__gender search__girl">女の子</p>
+                                        <p class="search__num">生体番号：0000</p>
+                                        <p class="search__price">価格(税込)：○○円</p>
+                                    </div>
+                                    <div class="search__img-wrap"><img src="./assets/img/search-dog8.jpg" alt="チワワ" class="search__img"></div>
+                                </a>
+                            </li>
+                            <li class="search__item dog-kind3">
+                                <a href="#" class="search__link" id="dog9">
+                                    <div class="search__body">
+                                        <p class="search__name">プードル</p>
+                                        <p class="search__gender search__boy">男の子</p>
+                                        <p class="search__num">生体番号：0000</p>
+                                        <p class="search__price">価格(税込)：○○円</p>
+                                    </div>
+                                    <div class="search__img-wrap"><img src="./assets/img/search-dog9.png" alt="プードル" class="search__img"></div>
+                                </a>
+                            </li>
+                            <li class="search__item dog-kind3">
+                                <a href="#" class="search__link" id="dog10">
+                                    <div class="search__body">
+                                        <p class="search__name">プードル</p>
+                                        <p class="search__gender search__girl">女の子</p>
+                                        <p class="search__num">生体番号：0000</p>
+                                        <p class="search__price">価格(税込)：○○円</p>
+                                    </div>
+                                    <div class="search__img-wrap"><img src="./assets/img/search-dog10.jpg" alt="プードル" class="search__img"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.search -->
+
+        <!-- .modal -->
+        <div class="modal" id="js-modal">
+            <div class="modal__item dog1">
+                <p class="modal__ttl">ミニチュワダックスフンド</p>
+                <div class="modal__cont">
+                    <div class="modal__body">
+                        <dl class="modal__dl">
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">犬種</dt>
+                                <dd class="modal__dd">ミニチュワダックスフンド</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">性別</dt>
+                                <dd class="modal__dd">女の子</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">出身地</dt>
+                                <dd class="modal__dd">○○</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生年月日</dt>
+                                <dd class="modal__dd">2021年○月○日</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生体番号</dt>
+                                <dd class="modal__dd">0000</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">価格(税込)</dt>
+                                <dd class="modal__dd">○○円</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="modal__img-wrap"><img src="./assets/img/search-dog1.jpg" alt="ミニチュワダックスフンド" class="modal__img"></div>
+                </div>
+                <p class="modal__txt">※ご来店いただいた際、すでにご成約済みになっている場合がございます。お電話またはメールでお問い合わせをしてから、ご来店ください。</p>
+                <div class="modal__link-wrap"><a href="#" class="modal__link">閉じる</a></div>
+            </div>
+            <div class="modal__item dog2">
+                <p class="modal__ttl">ミニチュワダックスフンド</p>
+                <div class="modal__cont">
+                    <div class="modal__body">
+                        <dl class="modal__dl">
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">犬種</dt>
+                                <dd class="modal__dd">ミニチュワダックスフンド</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">性別</dt>
+                                <dd class="modal__dd">男の子</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">出身地</dt>
+                                <dd class="modal__dd">○○</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生年月日</dt>
+                                <dd class="modal__dd">2021年○月○日</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生体番号</dt>
+                                <dd class="modal__dd">0000</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">価格(税込)</dt>
+                                <dd class="modal__dd">○○円</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="modal__img-wrap"><img src="./assets/img/search-dog2.jpg" alt="ミニチュワダックスフンド" class="modal__img"></div>
+                </div>
+                <p class="modal__txt">※ご来店いただいた際、すでにご成約済みになっている場合がございます。お電話またはメールでお問い合わせをしてから、ご来店ください。</p>
+                <div class="modal__link-wrap"><a href="#" class="modal__link">閉じる</a></div>
+            </div>
+            <div class="modal__item dog3">
+                <p class="modal__ttl">ゴールデンレトリバー</p>
+                <div class="modal__cont">
+                    <div class="modal__body">
+                        <dl class="modal__dl">
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">犬種</dt>
+                                <dd class="modal__dd">ゴールデンレトリバー</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">性別</dt>
+                                <dd class="modal__dd">男の子</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">出身地</dt>
+                                <dd class="modal__dd">○○</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生年月日</dt>
+                                <dd class="modal__dd">2021年○月○日</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生体番号</dt>
+                                <dd class="modal__dd">0000</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">価格(税込)</dt>
+                                <dd class="modal__dd">○○円</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="modal__img-wrap"><img src="./assets/img/search-dog3.jpg" alt="ゴールデンレトリバー" class="modal__img"></div>
+                </div>
+                <p class="modal__txt">※ご来店いただいた際、すでにご成約済みになっている場合がございます。お電話またはメールでお問い合わせをしてから、ご来店ください。</p>
+                <div class="modal__link-wrap"><a href="#" class="modal__link">閉じる</a></div>
+            </div>
+            <div class="modal__item dog4">
+                <p class="modal__ttl">チワワ</p>
+                <div class="modal__cont">
+                    <div class="modal__body">
+                        <dl class="modal__dl">
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">犬種</dt>
+                                <dd class="modal__dd">チワワ</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">性別</dt>
+                                <dd class="modal__dd">女の子</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">出身地</dt>
+                                <dd class="modal__dd">○○</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生年月日</dt>
+                                <dd class="modal__dd">2021年○月○日</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生体番号</dt>
+                                <dd class="modal__dd">0000</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">価格(税込)</dt>
+                                <dd class="modal__dd">○○円</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="modal__img-wrap"><img src="./assets/img/search-dog4.png" alt="チワワ" class="modal__img"></div>
+                </div>
+                <p class="modal__txt">※ご来店いただいた際、すでにご成約済みになっている場合がございます。お電話またはメールでお問い合わせをしてから、ご来店ください。</p>
+                <div class="modal__link-wrap"><a href="#" class="modal__link">閉じる</a></div>
+            </div>
+            <div class="modal__item dog5">
+                <p class="modal__ttl">プードル</p>
+                <div class="modal__cont">
+                    <div class="modal__body">
+                        <dl class="modal__dl">
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">犬種</dt>
+                                <dd class="modal__dd">プードル</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">性別</dt>
+                                <dd class="modal__dd">女の子</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">出身地</dt>
+                                <dd class="modal__dd">○○</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生年月日</dt>
+                                <dd class="modal__dd">2021年○月○日</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生体番号</dt>
+                                <dd class="modal__dd">0000</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">価格(税込)</dt>
+                                <dd class="modal__dd">○○円</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="modal__img-wrap"><img src="./assets/img/search-dog5.jpg" alt="プードル" class="modal__img"></div>
+                </div>
+                <p class="modal__txt">※ご来店いただいた際、すでにご成約済みになっている場合がございます。お電話またはメールでお問い合わせをしてから、ご来店ください。</p>
+                <div class="modal__link-wrap"><a href="#" class="modal__link">閉じる</a></div>
+            </div>
+            <div class="modal__item dog6">
+                <p class="modal__ttl">チワワ</p>
+                <div class="modal__cont">
+                    <div class="modal__body">
+                        <dl class="modal__dl">
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">犬種</dt>
+                                <dd class="modal__dd">チワワ</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">性別</dt>
+                                <dd class="modal__dd">男の子</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">出身地</dt>
+                                <dd class="modal__dd">○○</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生年月日</dt>
+                                <dd class="modal__dd">2021年○月○日</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生体番号</dt>
+                                <dd class="modal__dd">0000</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">価格(税込)</dt>
+                                <dd class="modal__dd">○○円</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="modal__img-wrap"><img src="./assets/img/search-dog6.jpg" alt="チワワ" class="modal__img"></div>
+                </div>
+                <p class="modal__txt">※ご来店いただいた際、すでにご成約済みになっている場合がございます。お電話またはメールでお問い合わせをしてから、ご来店ください。</p>
+                <div class="modal__link-wrap"><a href="#" class="modal__link">閉じる</a></div>
+            </div>
+            <div class="modal__item dog7">
+                <p class="modal__ttl">ミニチュワダックスフンド</p>
+                <div class="modal__cont">
+                    <div class="modal__body">
+                        <dl class="modal__dl">
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">犬種</dt>
+                                <dd class="modal__dd">ミニチュワダックスフンド</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">性別</dt>
+                                <dd class="modal__dd">男の子</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">出身地</dt>
+                                <dd class="modal__dd">○○</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生年月日</dt>
+                                <dd class="modal__dd">2021年○月○日</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生体番号</dt>
+                                <dd class="modal__dd">0000</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">価格(税込)</dt>
+                                <dd class="modal__dd">○○円</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="modal__img-wrap"><img src="./assets/img/search-dog7.jpg" alt="ミニチュワダックスフンド" class="modal__img"></div>
+                </div>
+                <p class="modal__txt">※ご来店いただいた際、すでにご成約済みになっている場合がございます。お電話またはメールでお問い合わせをしてから、ご来店ください。</p>
+                <div class="modal__link-wrap"><a href="#" class="modal__link">閉じる</a></div>
+            </div>
+            <div class="modal__item dog8">
+                <p class="modal__ttl">チワワ</p>
+                <div class="modal__cont">
+                    <div class="modal__body">
+                        <dl class="modal__dl">
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">犬種</dt>
+                                <dd class="modal__dd">チワワ</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">性別</dt>
+                                <dd class="modal__dd">女の子</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">出身地</dt>
+                                <dd class="modal__dd">○○</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生年月日</dt>
+                                <dd class="modal__dd">2021年○月○日</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生体番号</dt>
+                                <dd class="modal__dd">0000</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">価格(税込)</dt>
+                                <dd class="modal__dd">○○円</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="modal__img-wrap"><img src="./assets/img/search-dog8.jpg" alt="チワワ" class="modal__img"></div>
+                </div>
+                <p class="modal__txt">※ご来店いただいた際、すでにご成約済みになっている場合がございます。お電話またはメールでお問い合わせをしてから、ご来店ください。</p>
+                <div class="modal__link-wrap"><a href="#" class="modal__link">閉じる</a></div>
+            </div>
+            <div class="modal__item dog9">
+                <p class="modal__ttl">プードル</p>
+                <div class="modal__cont">
+                    <div class="modal__body">
+                        <dl class="modal__dl">
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">犬種</dt>
+                                <dd class="modal__dd">プードル</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">性別</dt>
+                                <dd class="modal__dd">男の子</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">出身地</dt>
+                                <dd class="modal__dd">○○</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生年月日</dt>
+                                <dd class="modal__dd">2021年○月○日</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生体番号</dt>
+                                <dd class="modal__dd">0000</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">価格(税込)</dt>
+                                <dd class="modal__dd">○○円</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="modal__img-wrap"><img src="./assets/img/search-dog9.png" alt="プードル" class="modal__img"></div>
+                </div>
+                <p class="modal__txt">※ご来店いただいた際、すでにご成約済みになっている場合がございます。お電話またはメールでお問い合わせをしてから、ご来店ください。</p>
+                <div class="modal__link-wrap"><a href="#" class="modal__link">閉じる</a></div>
+            </div>
+            <div class="modal__item dog10">
+                <p class="modal__ttl">プードル</p>
+                <div class="modal__cont">
+                    <div class="modal__body">
+                        <dl class="modal__dl">
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">犬種</dt>
+                                <dd class="modal__dd">プードル</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">性別</dt>
+                                <dd class="modal__dd">女の子</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">出身地</dt>
+                                <dd class="modal__dd">○○</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生年月日</dt>
+                                <dd class="modal__dd">2021年○月○日</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">生体番号</dt>
+                                <dd class="modal__dd">0000</dd>
+                            </div>
+                            <div class="modal__dl-item">
+                                <dt class="modal__dt">価格(税込)</dt>
+                                <dd class="modal__dd">○○円</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="modal__img-wrap"><img src="./assets/img/search-dog10.jpg" alt="プードル" class="modal__img"></div>
+                </div>
+                <p class="modal__txt">※ご来店いただいた際、すでにご成約済みになっている場合がございます。お電話またはメールでお問い合わせをしてから、ご来店ください。</p>
+                <div class="modal__link-wrap"><a href="#" class="modal__link">閉じる</a></div>
+            </div>
+        </div>
+        <!-- /.modal -->
+
+    </main>
+
+    <!-- .footer -->
+    <footer class="footer wrapper section">
+        <div class="footer__info">
+            <div class="footer__logo"><a href="./index.html"><img src="./assets/img/logo.png" alt="ペットショップ菅原"></a></div>
+            <div class="footer__contact">
+                <p class="footer__tel">TEL 000-0000-0000</p>
+                <a href="./contact.html" class="footer__contact-link">お問い合わせはこちら</a>
+            </div>
+        </div>
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="./index.html">ホーム</a></li>
+                <li class="footer__item">
+                    犬・猫を探す
+                    <ul class="footer__sublist">
+                        <li class="footer__subitem"><a href="./dog-search.html#contents" class="footer__sublink">犬を探す</a></li>
+                        <li class="footer__subitem"><a href="./cat-search.html#contents" class="footer__sublink">猫を探す</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    サービス
+                    <ul class="footer__sublist">
+                        <li class="footer__subitem"><a href="./service.html#shampoo" class="footer__sublink">シャンプー</a></li>
+                        <li class="footer__subitem"><a href="./service.html#cafe" class="footer__sublink">ふれあいカフェ</a></li>
+                        <li class="footer__subitem"><a href="./service.html#teach" class="footer__sublink">しつけ教室</a></li>
+                        <li class="footer__subitem"><a href="./service.html#hotel" class="footer__sublink">ペットホテル</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    私たちについて
+                    <ul class="footer__sublist">
+                        <li class="footer__subitem"><a href="./about.html#company" class="footer__sublink">会社概要</a></li>
+                        <li class="footer__subitem"><a href="./about.html#access" class="footer__sublink">アクセス</a></li>
+                        <li class="footer__subitem"><a href="./about.html#voice" class="footer__sublink">お客様の声</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item"><a href="./form.html">予約フォーム</a></li>
+            </ul>
+        </nav>
+        <ul class="footer__sns">
+            <li class="footer__sns-item"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+            <li class="footer__sns-item"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="footer__sns-item"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+        <p class="footer__copyright">copyright &copy; petshop sugawara all rights reserved.</p>
+    </footer>
+    <!-- /.footer -->
+
+    <a href="#" class="totop" id="js-top"><i class="fa-solid fa-angle-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/search.js"></script>
+</body>
+</html>
